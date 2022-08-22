@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+    <!-- shows 3 boxes -->
+    <div style=" margin: 30px; align-items: center; background-color:blue; width: 200px; height: 200px;"></div>
+    <div style="margin: 30px; align-items: center;background-color:blue; width: 200px; height: 200px;"></div>
+    <div style="margin: 30px; align-items: center;background-color:blue; width: 200px; height: 200px;"></div>
+
+
+<!-- shows x number of boxes -->
+    </style>
+    {% for i in range(0,num) %}
+    <div class = 'box' 
+    style="margin: 30px; align-items: center;background-color: blue; width: 200px; height: 200px;"> </div>
+    {% endfor %}
+
+<!-- can use this for all challenges -->
+</style>
+{% for i in range(0,num) %}
+<div class = 'box' 
+style="margin: 30px; align-items: center;background-color: {{color}}; width: 200px; height: 200px;"> </div>
+{% endfor %}
+
+
+</div>
+</body>
+</html>
